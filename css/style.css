@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    /* saco los valores por defecto (Global)*/
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: content-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+/* ----- header ----- */
+header a{
+    color: #fff;
+}
+
+/* afecta tanto a un elemento del header como del footer */
+#menuppal, #banner a{
+    background-color: #F0A83E;
+}
+
+/* afecta tanto a un elemento del header como del footer */
+#barrasuperior, footer #derechos{
+    background-color: #222222;
+    color: #fff;
+}
+
+/* Ponerle el ícono de la patita al menú ppal través de estilos de lista
+.menuppal nav ul{
+    list-style-image: url("../img/pawprint.svg");
+}*/
+
+/* ----- banner ----- */
+
+#banner{
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    height: 408px;
+    background-size: cover;
+    background-position: center;
+    color: #3C2313;
+}
+
+#banner a{
+    color: #fff;
+}
+
+/* ----- productos ----- */
+#productos{
+    color: #3C2313;
+}
+
+#productos a{
+    color: #666666;
+}
+
+.precio{
+    color: #F0A83E;
+}
+
+/* también afecta a un elemento del banner */
+.producto, #banner h2{
+    background-color: #FBFAF6;
+}
+
+/* ----- footer ----- */
+#contacto{
+    background-color: #3C2313;
+    color: #fff;
+}
+#contacto p{
+    color: #8A8787;
+}

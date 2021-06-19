@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Petshop</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!------- header ------->
     <header>
-        <div class="barrasuperior">
+        <!-- barra idiomas -->
+        <div id="barrasuperior">
             <p>Grandes ofertas en comederos</p>
             <!-- TODO Preguntar si el nav va una sola vez o acá también -->
             <ul>
@@ -16,62 +21,80 @@
                 <li><a href="">ARG$</a></li>
             </ul>
         </div>
-        <div class="menuppal">
-            <div class="logo">
-                <img src="./img/Cat.svg" alt="Ícono de la cara de un gato">
-                <h1>FrontCat&Dog</h1>
-                <img src="./img/Dog.svg" alt="Ícono de la cara de un perro">
-            </div>
+        <!-- menu principal -->
+        <div id="menuppal">
+            <img src="./img/Logo.png" alt="Logo de FontCat&Dog. El mismo consiste el la palabra front en letras negras, seguido de la palabra cat&dog en letras blancas. A la izquierda del texto hay un ícono de la cara de un gato y a la derecha uno de la cara de un perro."></h1>
             <nav>
                 <ul>
                     <li>
-                        <a href=""><img src="./img/pawprint 1.svg" alt="">Categorías</a>
+                        <a href=""><i class="fa fa-paw"></i>Categorías</a>
                     </li>
                     <li>
-                        <a href=""><img src="./img/pawprint 1.svg" alt="">Pets</a>
+                        <a href=""><i class="fa fa-paw"></i>Pets</a>
                     </li>
                     <li>
-                        <a href=""><img src="./img/pawprint 1.svg" alt="">Nosotros</a>
+                        <a href=""><i class="fa fa-paw"></i>Nosotros</a>
                     </li>
                     <li>
-                        <a href=""><img src="./img/pawprint 1.svg" alt="">Contáctanos</a>
+                        <a href=""><i class="fa fa-paw"></i>Contáctanos</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="banner">
+        <!-- banner -->
+        <section id="banner">
             <!-- TODO Definir texto alternativo y etiquetas de los textos-->
-            <img src="./img/bowl-and-pet-daities-on-green-background 1.png" alt="">
-            <p>¡Es un placer tenerte aquí!</p>
+            <h2>¡Es un placer tenerte aquí!</h2>
             <p>¡Comederos en descuento!</p>
-            <p>COMEDEROS</p>
+            <a href="">COMEDEROS</a>
         </section>
-        <section class="productos">
-            <img src="./img/pawprint 1.svg" alt="Ícono de pata de perro">
+        <!-- productos -->
+        <section id="productos">
+            <img src="./img/pawprintorange.svg" alt="Ícono de pata de perro">
             <h2>Productos Destacados</h2>
-            <p>Comederos - Accesorios - Comidas</p>
-            <div>
+            <span><a href="">Comederos</a> - <a href="">Accesorios</a> - <a href="">Comidas</a></span>
+            <div class="producto">
                 <img src="./img/churrasquito.png" alt="">
                 <p>Juguete Churrasquito</p>
-                <p>$150</p>
+                <p class="precio">$150</p>
             </div>
-            <div>
+            <div class="producto">
                 <img src="./img/comedero.png" alt="">
                 <p>Comedero para perro</p>
-                <p>$250</p>
+                <p class="precio">$250</p>
             </div>
-            <div>
+            <div class="producto">
                 <img src="./img/Huesito.png" alt="">
                 <p>Juguete Huesito</p>
-                <p>$650</p>
+                <p class="precio">$650</p>
             </div>
         </section>
     </main>
-    <!-- TODO seccion contacto -->
+    <!------- footer ------->
     <footer>
-        <p>Todos los derechos reservados FrontEnd</p>
+        <!-- info de contacto -->
+        <div id="contacto">
+            <div class="elem-contacto">
+                <img src="img/location.svg" alt="">
+                <h3>Localidad</h3>
+                <p>Calle - provincia</p>
+            </div>
+            <div class="elem-contacto">
+                <img src="img/phone.svg" alt="">
+                <h3>Teléfono</h3>
+                <p>Número de teléfono</p>
+            </div>
+            <div class="elem-contacto">
+                <img src="img/correo.svg" alt="">
+                <h3>Correo Electrónico</h3>
+                <p>Dirección de correo</p>
+            </div>
+            <img src="img/Logo2.png" alt="Logo de FontCat&Dog. El mismo consiste el la palabra front en letras negras, seguido de la palabra cat&dog en letras blancas. A la izquierda del texto hay un ícono de la cara de un gato y a la derecha uno de la cara de un perro.">       
+        </div>
+        <!-- derechos reservados -->
+        <p id="derechos">Todos los derechos reservados FrontEnd</p>
     </footer>
 </body>
 
